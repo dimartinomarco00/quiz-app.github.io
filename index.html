@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <!-- Font-Awesone -->
+    <script src="https://kit.fontawesome.com/1ec278ba68.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script src="js/questions.js" async defer></script>
+    <script src="js/script.js" async defer></script>
+</head>
+<body>
+    <div class="start_btn"><button>Inizia Quiz</button></div>
+
+    <!-------------------------------------------------- info-box ------------------------------------------------------>
+
+    <div class="info_box">
+        <div class="info_title"><span>Alcune regole del quiz</span></div>
+
+        <div class="info_list">
+            <div class="info">1) Avrete a disposizione solo <span>15 secondi</span> per ogni domanda</div>
+            <div class="info">2) Una volta selezionata la risposta, non è possibile effettuare una nuova selezione.</div>
+            <div class="info">3) non è possibile selezionare alcuna opzione una volta scaduto il tempo.</div>
+            <div class="info">4) non è possibile uscire dal Quiz mentre si sta giocando.</div>
+            <div class="info">5) si otterranno punti in base alle risposte corrette</div>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Esci dal quiz</button>
+            <button class="restart">Continua</button>
+        </div>
+    </div>
+
+    <!-------------------------------------------------- quiz-box ------------------------------------------------------>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz App</div>
+
+            <div class="timer">
+                <div class="time_text">Tempo rimasto</div>
+                <div class="time_icon"><i class="fa-solid fa-hourglass-start fa-shake"></i></div>
+                <div class="timer_seconds">15</div>
+            </div>
+
+            <div class="time_line"></div>
+        </header>
+
+        <section>
+            <div class="question_text">
+                <!--<span>Per cosa sta l' acronimo HTML?</span>-->
+            </div>
+
+            <div class="option_list">
+            <!--
+                <div class="option">
+                    <span>Hyper Text Processor</span>
+                    <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+                </div>
+           
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+           
+                <div class="option"><span>Hyper Text Multiple Language</span></div>
+                <div class="option"><span>Hyper Tool Multi Language</span></div>
+            -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_question"><!--<span><p>2</p>di<p>5</p>domande</span>--></div>
+            <button class="next_btn">Avanti</button>
+        </footer>
+    </div> 
+
+    <!--------------------------------------------- result_box -------------------------------------------------------->
+
+    <div class="result_box">
+        <div class="icon"><i class="fa-solid fa-crown"></i></div>
+        <div class="complete_text">Hai completato il Quiz!</div>
+        <div class="score_text"><!--<span>e mi spiace, hai indovinato solo <p>2</p> su <p>5</p></span>--></div>
+
+        <div class="buttons">
+           <button class="restart">Riprova Quiz</button>
+           <button class="quit">Abbandona Quiz</button>
+        </div>
+    </div>
+</body>
+</html>
